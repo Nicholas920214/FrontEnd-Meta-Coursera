@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Little Lemon</title>
+
+  <meta property="og:title" content="Our Menu">
+  <meta property="og:type"  content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url"   content="https://littlelemon/">
+  <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Little Lemon">
+
+  <link rel="stylesheet" href="Styles_InputForm_Week1.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png">
+  </header>
+  <main>
+    <form>
+        <div>
+            <label for="username">Username</label> <!--for is same as id-->
+            <input type="text" id="username" placeholder="Name" required minlength="2">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password longer than 2" required minlength="2">
+        </div>
+        <button type="submit">Log in</button>
+    </form>
+
+    <form>
+        <h1>Book a Table</h1>
+        <form method="post"> <!--choosing the way to send html-->
+            <fieldset id="size"> <!--It's for grouping the radio button-->
+                <input type="radio" value="2" name="size"> 2-person table <!--name has to be matched with id in filedset-->
+                <input type="radio" value="4" name="size" checked> 4-person table <!--using checked to set the default-->
+                <input type="radio" value="6" name="size"> 6-person table 
+            </fieldset> 
+            <fieldset id="location">
+                <label>
+                    <input type="radio" value="indoors" name="location" checked>indoors
+                </label>
+                <label>
+                    <input type="radio" value="outdoors" name="location">outdoors
+                </label>
+            </fieldset>
+            <button type="submit">Book table</button>
+        </form>
+    </form>
+
+    <form>
+        <h1>Interactive Booking</h1>
+        <form method="post">
+            <div>
+                <label for="booking_date">Booking date</label>
+                <input type="date" id="booking_date" name="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of people</label>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+            <div>
+                <button type="submit">Interactive booking table</button>
+            </div>
+        </form>
+    </form>
+
+    <h1>About</h1>
+    <p>Little Lemon is a family owned Mediterranean restaurant</p>
+    <!--
+    <audio loop controls>
+        <source src="music.ogg" type="audio/ogg"
+    </audio>
+    <video width="320" height="240" conttols muted>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    --> <!--If not commented, screen cannot display following since I don't have audio and video soource file-->
+    <iframe src="https://www.example.com" allow="camera 'none'; microphone 'none'"></iframe>
+    <iframe src="https://www.example.com" sandbox="allow-downloads"></iframe>
+    <br>
+    <iframe src="logo.png" width="320" height="128" sandbox allow="payment 'none'; camera 'none'; microphone 'none'"></iframe>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+.box3 {
+    background-color: blanchedalmond;
+    align-self: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.container {
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.container2 {
+    background-color: #2b2d42;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+.container2 li {
+    list-style-type: none;
+}
+.container2 a {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.searchBox {
+    border: 0;
+    flex: 1;
+}
+
+.searchButton {
+    color: white;
+    background: #0f4a8a;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row .label {
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row .container3 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta {
+    background-color: #EE9972;
+}
+
+.pizza {
+    background-color: #F4CE14;
+}
+
+.burrito {
+    background-color: #495E57;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 10px;
+    background-color: rgb(202, 66, 66);
+}
+
+.grid-demo {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.grid-demo header {
+    background-color: #2C3333;
+    text-align: center;
+    padding: 2em;
+}
+
+.grid-demo main {
+    background-color: #395B64;
+    text-align: center;
+    padding: 2em;
+}
+
+.grid-demo footer {
+    background-color: #A5C9CA;
+    text-align: center;
+    padding: 2em;
+}
+
+.gridtwelve .parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.gridtwelve .parent .segment {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+}
+
+.gridtwelve .parent .twelve {
+    background-color: lightseagreen;
+    grid-column: 1/span 12;
+}
+
+.gridtwelve .parent .eight {
+    background-color: bisque;
+    grid-column: 5/span 8;
+}
+
+.gridtwelve .parent .four {
+    background-color: lightblue;
+    grid-column: 1/span 4;
+}
+
+.gridtwelve .parent .six {
+    background-color: lightsteelblue;
+    grid-column: 5/span 6;
+}
+
+.gridtwelve .parent .seven {
+    background-color: lightcoral;
+    grid-column: 3/span 7;
+}

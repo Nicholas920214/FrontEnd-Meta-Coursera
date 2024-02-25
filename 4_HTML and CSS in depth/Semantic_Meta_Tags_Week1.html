@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Diary</title>
+        <meta charset="utf-8">
+        <meta name="robots" content="index, follow"> <!--It's for modern search engine-->
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0"> <!--It's for scaling the devices-->
+        <!--Open graph protocal-->
+        <!--Must contain title, type, description and image elements-->
+        <!--It's for social media to display the content preview by the link-->
+        <meta property:"og:title" content="My first web page">
+        <meta property: "og:type" content="website">
+
+        <!--Here's also for css-->
+        <style>
+            body { 
+            font-size: 20px; 
+            text-align: center; 
+            } 
+            li { 
+                display: inline; 
+                padding: 20px; 
+                color: green;
+                font-weight: bold;
+            } 
+            ol {
+                display: inline;
+                padding: 20px;
+                color: gray;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body> <!--Using these section tags(article, header, ...) are to be managed conveniently-->
+        <article>
+            <header>
+                <h1>My summer holiday</h1>
+                <p>Posted on Monday</p>
+                <img src="logo.png"/>
+            </header>
+            <nav> <!--navigation tag-->
+                <!--Unordered list-->
+                <ul>
+                    <ol>Day 1</ol>
+                    <ol>Day 2</ol>
+                    <li>Day One</li> <!--list tag-->
+                    <li>Day Two</li>
+                </ul>
+            </nav>
+            <main>
+                <h2>This summer I visited my grandparents.</h2>
+                <section>
+                    <h3>Day one</h3>
+                    <p>I arrived at my grandparents.</p>
+                </section>
+                <section>
+                    <h3>Day Two</h3>
+                    <p>I ate at my grandparents' restaurants.</p>
+                </section>
+            </main>
+            <footer></footer> 
+        </article>
+    </body>
+</html>

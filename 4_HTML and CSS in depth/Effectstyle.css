@@ -1,0 +1,83 @@
+body {
+    font-family: 'Trebuchet Ms';
+}
+.texteffect .text {
+    width: 300px;
+    border: 2px solid brown;
+    white-space: nonwrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.texteffect .text:hover {
+    overflow: visible;
+}
+
+.a {
+    margin: 30px;
+    transform: skewX(20deg);
+    transition: 5s;
+}
+.b {
+    margin: 100px;
+    transform: rotate(10deg);
+    transition: 5s;
+}
+
+.box {
+    display: grid;
+    width: 240px;
+    height: 240px;
+    margin: 100px;
+    background-color: green;
+    border-radius: 12px;
+    border: solid #6feb6f 4px;
+}
+.box:hover {
+    transform: rotateZ(60deg);
+    background-color: lightcoral;
+    opacity: 50%;
+    transition: 2s;
+}
+
+.box2 {
+    background-color: lightcoral;
+    width: 50px;
+    height: 50px;
+    animation: myanimation 3s infinite ease-in;
+}
+@keyframes myanimation {
+    from {width: 50px;}
+    to {width: 100px;}
+}
+
+
+.box3 {
+    background-color: lightcoral;
+    width: 50px;
+    height: 50px;
+    animation: myanimation2 3s infinite ease-in;
+}
+@keyframes myanimation2 {
+    0% {width: 50px;}
+    50% {background-color: aquamarine; height: 20px;}
+    100% {width: 100px;}
+}
+
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(640px, 0, 0);
+    }
+}
+#ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #62687F;
+    animation: bounce 2s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

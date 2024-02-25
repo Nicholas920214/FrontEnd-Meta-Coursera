@@ -1,0 +1,92 @@
+* {
+    list-style: none; /*Remove the bullet of list*/
+}
+body {
+    color: #333333;
+    background-color: #EE9972;
+    font-family: Cambria;
+}
+
+/*general sibling -> all the selector ul following the div tag*/
+div ~ul {
+    background-color: #EDEFEE;
+    color: #495E57;
+    box-shadow: inset 1px 1px 3px #333333;
+    padding: 10px;
+}
+
+/*Adjacent sibling tag*/
+img + p {
+    color: #495E57;
+    padding-left: 70px;
+    padding-right: 20px;
+    font-size: small;
+    font-family: Verdana;
+}
+
+/*Pseudo class*/
+.pseudo-demo .mypage {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pseudo-demo .mypage a:hover {
+    color: white;
+    background: brown;
+}
+.pseudo-demo .wrapper .mybutton:active {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornflowerblue;
+    transform: scale(0.99);
+}
+.pseudo-demo .first li::first-letter {
+    color: coral;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+}
+.pseudo-demo .second li::first-line {
+    color: lightseagreen;
+    text-decoration: underline;
+    line-height: 1;
+}
+.pseudo-demo .third li::marker {
+    color: cornflowerblue;
+    content: '<> ';
+    font-size: 1.1em;
+}
+.pseudo-demo .fourth #tips::before {
+    background-color: darkkhaki;
+    color: darkslategray;
+    content: "Tip:";
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10%;
+}
+.pseudo-demo .fourth #tips::after {
+    background-color: darkkhaki;
+    color: darkslategray;
+    content: "!!";
+    padding-right: 5px;
+    border-radius: 20%;
+}
+
+.LVHA a:link {
+    color: blue;
+}
+.LVHA a:visited {
+    color: blueviolet;
+}
+.LVHA a:hover {
+    color: green;
+}
+.LVHA a:active {
+    color: white;
+    background-color: black;
+}
+.textual {
+    border: 1px;
+    padding: 10px;
+    background-color: white;
+}
+.textual:hover {
+    box-shadow: 5px 0px 25px black;
+}

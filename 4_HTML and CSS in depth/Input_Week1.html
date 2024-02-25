@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Input</title>
+</head>
+<body>
+    <div>
+        <p>Username</p>
+        <input type="text" id="username" name="username" placeholder="Name" required>
+        <br />
+        <button onclick="alert('Are you sure you want to continue?')">
+            <p>Submit!</p>
+        </button>
+    </div>
+    <button onclick="alert('Are you sure you want to continue?')"> 
+        <img src="https://yourserver.com/button_img.jpg" 
+            alt="Submit the form" height="64" width="64">
+    ?</button>
+    <input type="checkbox" id="dog" name="dog" value="Dog"/>
+    <label for="dog">I like dogs</label>
+
+    <!--Create form-->
+    <main>
+        <h1>Sign up</h1>
+        <form>
+            <div> <!--different div in different css-->
+                <!-- for is using id attribute -->
+                <label for="user_first_name">first Name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name">
+            </div>
+            <div>
+                <label for="user_last_name">last Name</label><br>
+                <input type="text" id="user_last_name" name="user_last_name">
+            </div>
+            <div>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" name="user_email">
+            </div>
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password">
+            </div>
+            <div>
+                <label for="user_confirm_password">Confirm</label><br>
+                <input type="password" id="user_confirm_password" name="user_confirm_password">
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright Little Lemon</p>
+    </footer>
+    
+    
+    
+</body>
